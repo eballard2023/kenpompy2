@@ -47,6 +47,8 @@ class FanMatch:
         self.expected_record_favs = None
         self.exact_mov = None
         
+        # Inside the __init__ method, after you have pred_score calculated:
+        self.pred_score = float(pred_s[0])
         if self.date is not None:
             self.url = self.url + "?d=" + self.date
 
